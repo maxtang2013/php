@@ -1,0 +1,4 @@
+# If you don't see error messages for critical errors.
+# Check php.ini
+display_errors=On
+error_reporting=E_ALL
