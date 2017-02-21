@@ -1,3 +1,21 @@
+# http://symfony.com/doc/current/debug/debugging.html
+# 1. in app_dev.php comment out this line
+# Disabling the Bootstrap File and Class Caching
+$kernel->loadClassCache();
+
+# 2.Command tools.
+#
+# debug:container
+#   Displays information about the contents of the Symfony container for all public services. To find only those matching a name, append the name as an argument.
+# debug:config
+#   Shows all configured bundles, their class and their alias.
+# debug:router
+#   Displays information about all configured routes in the application as a table with the name, method, scheme, host and path for each route.
+# debug:translation <locale>
+#   Shows a table of the translation key, the domain, the translation and the fallback translation for all known messages, if translations exist for the given locale.
+#
+
+
 # If you don't see error messages for critical errors.
 # Check php.ini
 display_errors=On
