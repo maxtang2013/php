@@ -1,0 +1,16 @@
+2017-02-27
+
+Hi everyone, first of all, I'm so glad to be a part of this team.  
+Now I want to stop today,
+
+1), Tested the normal functionalities of the website (join, login, upload photo, etc.).
+2), Tried to use the automated testing tool, Selenium IDE (as well as php-webdriver). It works fine on static pages. I'm still trying to figure out how to use it on dynamic pages.
+3), Read some dolphin framework code, learning the ordinary structure of a page.
+
+
+2017-02-28
+1), Right automated test cases for some of the webpages, include the main page, the help page, 	the login page, and the edit profile page.
+2), Tested the normal functionalities of the website, by hand and/or by using automated test tools.
+3), Read Selenium webdriver tutorial documents.
+4), Read api.ai online documents.
+5), Create simple agents and test it on the website.
