@@ -1,4 +1,5 @@
 2017-02-27
+8:00 ～ 16:48
 
 Hi everyone, first of all, I'm so glad to be a part of this team.  
 Now I want to stop today,
@@ -9,8 +10,42 @@ Now I want to stop today,
 
 
 2017-02-28
-1), Right automated test cases for some of the webpages, include the main page, the help page, 	the login page, and the edit profile page.
+8:15 ～ 16:49
+1), Wrote automated test cases for some of the webpages, including the main page, the help page, 	the login page, and the edit profile page.
 2), Tested the normal functionalities of the website, by hand and/or by using automated test tools.
 3), Read Selenium webdriver tutorial documents.
 4), Read api.ai online documents.
 5), Create simple agents and test it on the website.
+
+
+2017-03-01
+8:27 ～ 16:54
+1). Tested site.
+
+Created tickets
+3). TNH-1 => Some typos and a broken link.
+
+5). TNH-2 => Photo looks abnormal on profile page while loading.
+
+2). TNH-3 => Facebook Pixel javascript error.
+
+4). TNH-4 => Email verification logic inconsistent on different pages.
+
+
+2017-03-02
+8:20 ～ 16:45
+1). TNH-5 => Edit profile page, doesn't warn user that the username can be changed only once.
+	Changed the email to an address that doesn't exist, I got an alert window, but the email address wasn't reverted to the old valid one.
+
+2). TNH-6 => Upload photo dialog, there is no default album. The combo box on that dialog is empty, looks wired.
+
+3). TNH-7 => Edit profile page, two birthday fields don't match.
+
+4). Tested the site.
+
+
+2017-03-03
+8:37 ～ 16:39
+1). Tested the site.
+
+2). Created ticket TNH-8 => Order book payment page, zipcode seems always not match address in China.
