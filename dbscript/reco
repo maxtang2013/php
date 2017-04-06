@@ -1,0 +1,29 @@
+I’ve got something to say.  
+1).  I got 4 alert emails in about 3 hours, too much for me. 
+2). Didn’t set my own password during the registering process, so I have to use “forget password" to get the generated password to login into the website some days later.
+
+
+
+1). Main page
+         [Car] works well, page content normal.
+         	[follow tail link], works, lead to snapchat.com
+         	[DAILY SWEEPSTAKES] submit got an alert
+         [Help] page content normal
+         	[send question form] send successfully
+         [TERMS AND CONDITIONS OF USE]
+         	---BUG---  .? multiple times
+         [Login]
+         	wrong user password, denied. OK
+         	registered one, accepted. OK
+
+         [67 STEPS]
+         	[PAYMENT PAGE] https://www.tailopez.com/product.php?id=FS-7506&_s=58b63ac9a6470
+         	See our Terms & Conditions [insert link] for our full disclaimer of liability and other restrictions.
+         	Do you have questions about 67 Steps? Are you wondering if the program will work for you. Give us a call at 800-604-2587. We will be happy to discuss your goals and how the 67 Steps program may help you."
+
+
+
+Email verification logic inconsistent on different pages.
+Join with email address '6qgoz4+94e4yqduhym68@sharklasers.com' successfully, but validation failed on retrieve password page.
+
+
