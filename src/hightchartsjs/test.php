@@ -89,6 +89,7 @@
         }
         return x1 + x2;
     }
+    
 </script>
 
 <div class="container-fluid" id="chartContainer"></div>
