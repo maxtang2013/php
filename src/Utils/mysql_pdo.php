@@ -87,13 +87,24 @@ class DBTester {
     }
 
     public function testDateTimeCmp() {
-        $sql = sprintf("SELECT * FROM session where startTime > FROM_UNIXTIME(%d)", time());
+        $sql = sprintf("SELECT * FROM session where startTime < FROM_UNIXTIME(%d)", time());
         $stmt = $this->dbConn->query($sql);
         $res = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+        foreach ($res as $r) {
+            $dt = sprintf("%s", $r['startTime']);
+            $dateObj = DateTime::createFromFormat("Y-m-d H:i:s", $dt);
+
+            echo $dateObj->format("YmdH") . "\n";
+
+            //echo $regDate . "\n";
+
+//            echo sprintf("%s", $r['startTime']);
+        }
 
         echo json_encode($res) . "\n";
     }
 }
-
+date_default_timezone_set("Asia/Hong_Kong");
 $tester = new DBTester();
 $tester->testDateTimeCmp();

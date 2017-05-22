@@ -1,0 +1,125 @@
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Uninitialized string offset: 4 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 91
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 83
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Undefined offset: 0 in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+
+Notice: Trying to get property of non-object in /Users/maxtang/Projects/php/inc/adv_csv.php on line 85
+
+Call Stack:
+    0.0001     227192   1. {main}() /Users/maxtang/Projects/php/test/a.php:0
+    0.0020     640416   2. adv_csv->html_to_csv() /Users/maxtang/Projects/php/test/a.php:70
+
+"Gross sales","Net sales","First time sales","Recurring sales","Refund ","Void ","Chargeback ","Monthly","Percentage",
+"MID","Sales","","","","Refund/Void/Chargeback","",""," volume",""," ",
+"","","","Gross sales","Net sales","First time sales","Recurring sales","Refund ","Void ","Chargeback ","Monthly","Percentage",
+"e","$10,752.86 (25 sales)","$8,510.91 (17 sales)","$10,482.87 (12 unique)","$269.99 (3 unique)","$0.00 (0) 0.00%","$2,241.95 (8) 20.85%","$0.00 (0) 0.00%","$0.00/$40,000.00","0","",
+"Meritus","$10,752.86 (25 sales)","$8,510.91 (17 sales)","$10,482.87 (12 unique)","$269.99 (3 unique)","$0.00 (0) 0.00%","$2,241.95 (8) 20.85%","$0.00 (0) 0.00%","$0.00/$40,000.00","5.00% first time 5.00% recurring ","%",
+Done

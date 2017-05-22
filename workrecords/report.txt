@@ -256,7 +256,7 @@ UPDATE `Transactions` set `Status`='pending' where `ID`=13745275
 
 
 04-04
-8:42 ~ 16:54
+8:42 ~ 16:54            12
 TAIL-4634 admin/funnelList.php, respond [Add Funnel] button with a popup window instead of jumpping to admin/create_flow_test.php
 >> Ready on dev
 
@@ -271,7 +271,7 @@ Solved Diawi distribution installation problem.
 
 
 04-05
-8:37 ~ 16:55
+8:37 ~ 16:55            18
 TAIL-4663 Change the UI of the overview screen to use more mobile friendly design.
 >> In progress
 >> UI layout ready
@@ -282,3 +282,568 @@ TAIL-4668 Find a third part chart library and integrate it into the project.
 TAIL-4664	
 admin/paymentCascading.php could be exportable
 >> In progress
+
+
+04-06
+9:12 - 17:12            0
+TAIL-4645 Error in /admin/quickemail_help_send.php
+>> fixed on dev
+
+TAIL-4664 admin/paymentCascading.php could be exportable
+>> ready for test on dev2
+
+TAIL-4683 New overview screen, server side data retrieval.
+>> In progress.
+
+
+04-07
+8:41 - 18:00           79
+TAIL-4688
+Create a date picker screen to select the date range for the overview data.
+>> In progress
+>> Implemented a DatePicker popup dilog.
+>> Implemented a custom control to present data items in the date picker view.
+
+
+TAIL-4683
+New overview screen, server side data retrieval.
+>> In progress
+>> Talk to wen and John, have to cache data for performance issues.
+
+TAIL-4663
+Change the UI of the overview screen to use more mobile friendly design.
+>> In progress
+>> Improved the UI, add selection feedback for the collection view
+
+04-10
+8:49 - 17:06           17
+TAIL-4688
+Create a date picker screen to select the date range for the overview data.
+>> Done
+
+TAIL-4683
+New overview screen, server side data retrieval.
+>> Ready on dev2.
+
+TAIL-4663
+Change the UI of the overview screen to use more mobile friendly design.
+>> In progress
+>> Navigation between login page, home page, and date picker page done, including data transfer from date picker to home page.
+
+04-11
+8:26 - 16:43          17
+TAIL-4707
+Add a switch in Admin table or other, to indicate who can and who can not use the app?
+>> ready to test on dev2
+
+TAIL-4709
+Add two sub pages (week and month) for date picker for convinience
+>> Done
+
+TAIL-4663
+Change the UI of the overview screen to use more mobile friendly design.
+>> Ready for test
+
+04-12
+8:25 - 16:42          17
+CREATE TABLE `report_app_access_log` (
+    id INT UNIQUE AUTO_INCREMENT,
+    admin VARCHAR(50) NOT NULL,
+    access_path VARCHAR(1024) NOT NULL,
+    access_type ENUM('login_succeed', 'login_failed', 'access_ok', 'access_denied') NOT NULL,
+    access_time DATETIME NOT NULL);
+
+TAIL-4705
+Logging admin usage from app.
+>> ready on dev2
+
+TAIL-4726
+Add a section 'total spend on marketing' to the app overview page
+>> in progress
+>> Sever side ready
+
+TAIL-4723
+Change date format of some labels on Home and DatePicker page to show years for clarity
+>> Done
+
+04-13
+8:49 - 16:50       
+
+TAIL-4732
+Rearrange the home screen view controls for more sections.
+>> done
+
+TAIL-4726
+Add a section 'total spend on marketing' to the app overview page
+>> Done
+
+TAIL-4737 Initiate the DatePickerDialog with the date corresponding to the view that popped the dialog
+>> Done
+
+04-17
+8:38~17:00        20
+
+TAIL-4749
+Add a log component to the app for debugging.
+>> Done
+>> Added CleanroomLogger
+
+TAIL-4751
+Add the required app icons for iPad
+>> Done
+
+TAIL-4755
+Make the compared to date range optional.
+>> Done
+
+Read documents about crash report analyse, and made it clear that TestFlight is better for crash analyse.
+
+04-18
+8:36~16:36        0
+TAIL-4778
+Make the height of CollectionViews on Home page variable depending on it's contentCell size
+>> Finished
+
+TAIL-4756
+Add a ‘Hourly’ page for the date picker
+>> Refactored the creation of subviews.
+>> Stopped, talked to peter, seems unnecessary
+
+TAIL-4779
+(Server side) Return hourly revenue data when selected date range is less then or equal to 2 days.
+>> Finished
+
+
+04-19
+8:32~16:49             17
+TAIL-4765
+an we add a delete button to top of page for reuse replies
+>> Finished
+
+TAIL-4784
+Change the compared date accordingly when current date are chosen on "Day" page of the Datepicker
+>> Finished
+
+TAIL-4788
+Change DateRangePickerPopup to use paged-scrollview, instead of TabBarController
+>> Finished
+
+TAIL-4791
+(DatePickerPopup) Solve the problem that you can't scroll to the right most position on iPhone6 plus
+>> Fixed
+
+04-20
+8:30~17:24             56
+
+TAIL-4798
+Fix the issue that when push notifications arrive when the App is not running in background, tap the message doesn't show the sales detail page
+>> Done
+
+TAIL-4799
+Refactor the notification details page to accept more general data from server.
+>> Modified cron_sale_notification.php
+>> Done
+
+UPDATE `sales_notification` SET status='pending' WHERE `transcationID`=13745275
+DELETE FROM `ApprovedTransaction` where `Tid`=13745275
+UPDATE `Transactions` set `Status`='pending' where `ID`=13745275
+
+04-21
+8:33~17:09               36
+
+TAIL-4804
+Set default state of the 'compared to' to 'off‘
+
+
+Followed along some Apple’s samples to learn more about the Cocoa Touch api.
+
+
+04-24
+9:01~17:01              0
+TAIL-4814
+Save recent sales notification data locally, and create a new screen in the app to show a list of them.
+>> Finished
+
+TAIL-3892 - Automated funnel testing with PhantomJS .
+>> In progress
+>> Checked the .js and read PhantomJS's documents.
+
+04-25
+8:34~17:34            60
+
+TAIL-3892 - Automated funnel testing with PhantomJS 
+>> Suspended, may come back to it later
+>> Tried to read the js code, but not fully understood the purpose  yet.
+
+TAIL-4835
+Fix the bug for saving sales list to locally filesystem.
+>> Finished
+
+TAIL-4833
+Add new joins data to report app, server side.
+>> In progress
+>> Talked to john and wena about the cache table
+
+hourly_tail_report.php
+"cron_query_result"
+
+// new joins from 67 steps
+SELECT count(DISTINCT `flow_joinrecords`.`user`) as count FROM `flow_joinrecords`, `Profiles_Last_ext` where `flow_joinrecords`.`isnew`='1' and `flow_joinrecords`.`flowid` in (select flow_parentflow.id from `flow_parentflow` WHERE `nick` like '%67 Steps%') and `user` = `ProfilesID` and `LastReg_Hour` >=  '2016010100'
+
+// new joins from BooksOfTheDay
+SELECT count(DISTINCT flow_joinrecords.user) as count, LastReg_Hour FROM `flow_joinrecords`, `Profiles_Last_ext` where `flow_joinrecords`.`isnew`='1' and `flow_joinrecords`.`flowid` = 504 and `flow_joinrecords`.`user` = `Profiles_Last_ext`.`ProfilesID` and `Profiles_Last_ext`.`LastReg_Hour` > '2016042600' GROUP BY `LastReg_Hour`
+
+
+INSERT INTO `Profiles_Last_ext` (`ProfilesID`, `LastReg_Hour`) SELECT `ProfilesID`, DATE_FORMAT(LastReg,'%Y%d%m%H') FROM `Profiles_Last` where not exists
+      (select 1 from Profiles_Last_ext where Profiles_Last_ext.ProfilesID = Profiles_Last.ProfilesID)
+
+
+SELECT count(DISTINCT `Profiles_Last_ext`.`ProfilesID`) S,  LastReg_Hour
+			  FROM `Profiles_Last`, `Profiles_Last_ext`
+			  WHERE `Profiles_Last`.`ProfilesID` = `Profiles_Last_ext`.`ProfilesID` and `LastReg_Hour` > '2016010223' GROUP BY `LastReg_Hour`
+
+
+04-26
+8:49 ~ 17:54            65
+
+TAIL-4858
+Add new joins data to report app, client side.
+>> Finished
+
+TAIL-4833
+Add new joins data to report app, server side.
+>> Finished
+
+// To add a new section
+1. add new elements to the layout in the storyboard.
+2. Add a new SectionName constant in DataManager.swift
+3. Add a new Method to fetch data for that section
+4. In HomeViewController.swift:
+	a). initCollectionViewControllerFor(section: dm.sectionNewJoins, view: newJoinsCollectionView)
+	b). getHeightConstraintForCollectionViewInSection(_:)
+	c). getSectionCollectionView(_:)
+	d). getSectionChart(_:)
+	e). fetchDataFromServer()
+
+
+
+04-27
+8:47~17:50             60
+
+TAIL-4869
+Move the creation of section UIView controls from storyboard to code, to facilitate adding more sections in the future.
+>> finished
+
+TAIL-4859
+Adjust screen layout with new designs
+>> Finished
+
+TAIL-4867
+Add a 'Product Revenue' section to app, server side
+>> Finished
+
+TAIL-4873
+Add a the 'Product Revenue' section to app, client side.
+>> Finished
+
+
+
+04-28
+8:54~17:57         60
+
+TAIL-4889
+Make the date range controls (Home page) stay visible while scrolling down.
+>> Finished
+
+TAIL-4887
+Add a button on Home page to jump to sales list page.
+>> Finished
+
+TAIL-4882
+Add the 'Co Register' section to report App, server side.
+>> Finished
+
+TAIL-4884
+Add the 'Co Register' section to report App, client side.
+>> Finished
+
+
+05-02
+9:23~17:04
+TAIL-4886
+Create a request buffer, so that even multiple requests are under going, the UI won't go wrong.
+>> Finished
+
+TAIL-4912
+Add the "Email List" Section to report App.
+>> Finished
+
+TAIL-4915
+Request data only when the section is visible on the screen.
+>> Finished
+
+
+05-03
+9:30~18:00
+
+TAIL-4920
+Add '67 steps Youtube Paid Video Ads(Total)' Section to App, server side	
+>> In progress
+
+05-04
+8:42~17:24
+
+TAIL-4920
+Add '67 steps Youtube Paid Video Ads(Total)' Section to App, server side	
+>> Finished
+
+TAIL-4932
+Add '67 steps Youtube Paid Video Ads(Total)' Section to App, client side
+>> Finished
+
+TAIL-4934
+Refactor 'revenue overview' related server code to avoid repeating code.
+>> In progress
+
+05-05
+8:49 ~ 16:59
+TAIL-4934
+Refactor 'revenue overview' related server code to avoid repeating code.
+>> Finished
+
+TAIL-4945
+Add section 'SMMA Youtube Paid Video Ads Cold Traffic ' to report App.
+>> Finished
+
+TAIL-4948
+Change the Date Range Picker page to use new design.
+>> IN progress
+
+
+05-08
+
+8:36~17:00
+Working on TAIL-4948
+Change the Date Range Picker page to use new design.
+>> 90% Done
+
+
+05-09
+8:40~17:03
+TAIL-4948
+Change the Date Range Picker page to use new design.
+>> Finished
+
+TAIL-4962
+Add the section "67 Steps Youtube Paid Video Ads Hot Traffic" to App
+>> Finished
+
+TAIL-4964
+Add other 4 sections don't need Facebook-data to report App.
+>> Finished
+
+TAIL-4966
+Add the two sections needs facebook ads data, "SMMA FB Cold Traffic" and "SMMA All (Totals)" to app
+>> Finished
+
+TAIL-4965
+Pull section list from the server, instead of hard coding them on the Client side.
+>> In progress
+
+05-10
+8:32~16:37
+TAIL-4965
+Pull section list from the server, instead of hard coding them on the Client side.
+
+Uploaded a new version of the App to TestFlight.
+
+TAIL-4978
+Replace the scrollView on Home page with a TableView for efficiency.
+>> In progress
+
+
+05-11
+8:39~16:41
+TAIL-4978
+Replace the scrollView on Home page with a TableView for efficiency.
+>> Finished
+
+TAIL-4990
+Find out why the .crash files are not symbolicated automatically by XCode
+>> Finished
+
+TAIL-4991
+Fix the crash while dragging the home page
+>> Fixed
+
+TAIL-4993
+Clear out the chart, when data for the desired section are not ready.
+>> Finished
+
+
+05-15
+8:41~16:47
+TAIL-5000
+Server side, future revenue, ROI data
+>> Finished
+
+TAIL-5001
+Fix the crash reported to TestFlight
+>> Finished
+
+Working on
+TAIL-5005
+Ask users to login if the login session is invalid while the app is showing the home page.
+>> Finished
+
+
+
+
+app/index.php
+app/AppAuthentication.php
+app/APN_reportApp.pem
+app/AAppAuthentication.php	
+app/APushTokenManager.php
+app/ReportOverviewData.php
+app/AccessLog.php
+app/sample_push.php
+
+inc/classes/report/appSectionAdWords.php
+
+periodic/cron_sale_notification.php
+periodic/onetime_profiles_last_ext.php
+
+
+
+ALTER TABLE Admins ADD app_login_session VARCHAR(255);
+ALTER TABLE Admins ADD app_session_expire_time DATETIME;
+ALTER TABLE `Admins` ADD `app_login_allowed` TINYINT(4) NOT NULL DEFAULT '1';
+ALTER TABLE `Admins` ADD `push_token` VARCHAR(2048) NOT NULL;
+
+CREATE TABLE `report_app_access_log` (
+id INT UNIQUE AUTO_INCREMENT,
+admin VARCHAR(50) NOT NULL,
+access_path VARCHAR(1024) NOT NULL,
+access_type ENUM('login_succeed', 'login_failed', 'access_ok', 'access_denied') NOT NULL,
+access_time DATETIME NOT NULL);
+
+create table Profiles_Last_ext (
+	`ProfilesID` INT(10) NOT NULL,
+	`LastReg_Hour` VARCHAR(10) NOT NULL,
+);
+// 再加这个表的index
+
+
+05~16
+8:58~
+
+TAIL-5013
+Add the section "SMMA Paul/Allen/Adroll" to report App
+>> Finished
+
+Worked with John to push the App code to live.
+
+TAIL-5014
+Upgrade slim to latest version
+>> Finished
+
+
+05-17
+8:47~17:27
+1. SELECT count(DISTINCT id) from email_unsubscribe
+2. SELECT count(DISTINCT uid) from profile_createbyemail
+3. SELECT ID FROM `Profiles` WHERE Status in('Rejected','Banned','Trash','Cancelled')
+
+(SELECT DISTINCT uid as `ID` FROM `profile_createbyemail`) UNION (SELECT DISTINCT profileID as `ID` FROM `email_unsubscribe`)
+UNION (SELECT ID FROM `Profiles` WHERE Status in('Rejected','Banned','Trash','Cancelled'))
+
+
+select distinct(`userid`) as uid from flow_records where `flowid`='888' and `subflowid`='9171' and dateline>='1463439460' and userid<>0 and not exists (select 1 from flow_testrecord where rid=flow_records.id) and not exists (select 1 from Profiles where flow_records.userid=ID and Status in('Rejected','Banned','Trash','iovation-join','iovation-login','iovation-checkout') ) LIMIT 26
+
+TAIL-5027 - Slow Query --> hourly_tail_report.php AND LINE: 2475
+>> Finished
+
+TAIL-5031 - Slow Query --> inc/classes/funnelSet.php AND LINE: 163
+>> Finished
+
+Tested the App with live data.
+
+TAIL-5032
+Slow Query --> inc/classes/newEmailBlast.php AND LINE: 2844
+>> In progress
+
+
+05~18
+9:03~
+
+TAIL-5033
+Slow Query --> inc/classes/funnelSet.php AND LINE: 464
+
+select count(*) as tot from flow_track t left join flow_records r on t.recordid=r.id left join Profiles p on t.userid=p.ID where t.flowid='388' and t.`template`='checkout' and t.`subflowid`='9468' and r.flowid='388' and r.subflowid='9468' and r.dateline>='1470694852' AND ( ( r.userid>0 AND p.AdminProfile != '1' AND p.Privacy_S != '6' AND p.Status != 'Rejected' AND p.Status!= 'Banned' AND p.Status!= 'Trash' AND p.Status!= 'iovation-join' AND p.Status!= 'iovation-login' AND p.Status!= 'iovation-checkout' ) or r.userid=0 ) and not exists (select 1 from flow_testrecord where rid=r.id)
+
+select count(*) as tot from flow_track t left join flow_records r on t.recordid=r.id left join Profiles p on t.userid=p.ID where t.flowid='388' and t.`template`='checkout' and t.`subflowid`='9468' and r.flowid='388' and r.subflowid='9468' and r.dateline>='1470694852' AND ( ( r.userid>0 AND p.AdminProfile != '1' AND p.Privacy_S != '6' AND p.Status not in( 'Rejected','Banned','Trash','iovation-join', 'iovation-login', 'iovation-checkout') ) or r.userid=0 ) and not exists (select 1 from flow_testrecord where rid=r.id)
+
+flow_track: 27317489 rows on DEV.
+
+flow_records: 16229045 rows on DEV.
+
+
+id                   1
+select_type          PRIMARY
+table                t
+type                 ref
+possible_keys        flowid,flowid_2,recordid,flow_subflow_id
+key                  flowid_2
+key_len              30
+ref                  const,const,const
+rows                 1
+Extra                Using index condition
+
+ 
+id                   1
+select_type          PRIMARY
+table                r
+type                 eq_ref
+possible_keys        PRIMARY,userid,flowid,flow_subflow,dateline,flowid...
+key                  PRIMARY
+key_len              4
+ref                  dbdev_site.t.recordid
+rows                 1
+Extra                Using where
+
+ select count( * ) as tot from flow_records r inner join flow_track t on t.recordid=r.id left join Profiles p on t.userid=p.ID where t.flowid='388' and t.`template`='checkout' and t.`subflowid`='9468' and r.flowid='388' and r.subflowid='9468' and r.dateline>='1470694852' AND ( ( r.userid>0 AND p.AdminProfile != '1' AND p.Privacy_S != '6' AND p.Status != 'Rejected' AND p.Status!= 'Banned' AND p.Status!= 'Trash' AND p.Status!= 'iovation-join' AND p.Status!= 'iovation-login' AND p.Status!= 'iovation-checkout' ) or r.userid=0 ) and not exists (select 1 from flow_testrecord where rid=r.id)
+
+
+TAIL-5015
+Send notification email to sysalerts@knowledgesociety.com for blocked request from the App
+>> Finished
+
+TAIL-5044
+Switch App to LIVE
+>> Finished
+
+TAIL-5045
+Clear the collection view as well at times when data is not ready.
+>> Finished
+
+TAIL-5033
+Slow Query --> inc/classes/funnelSet.php AND LINE: 464
+>> Checked and commented
+
+05-19
+TAIL-5047
+Error in /app/index.php
+>> Fixed
+
+TAIL-5055
+Modify onetime_cacheFunnelVisit.php to include all the fields in table 'flow_visitscache'
+>> Finished
+
+
+05-22
+8:31~
+
+ALTER TABLE `report_app_access_log` ADD `IP` VARCHAR(50) NOT NULL ;
+ALTER TABLE `report_app_access_log` ADD `parameters` VARCHAR(255) NOT NULL AFTER `IP`;
+
+

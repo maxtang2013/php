@@ -1,6 +1,6 @@
 <?php
 
-    $name = $_POST['name'];
+    // $name = $_POST['name'];
     echo 'Hello, '. $name;
 
 ?>
