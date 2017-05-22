@@ -6,9 +6,9 @@
 
 	$dates = [];
 
-	for($i=0; $i<=count($gross); $i=$i+1)
+	for($i=0; $i < count($gross['Amount']); $i=$i+1)
   	{
-        $dates[] = sprintf("05/%2d", $i);
+        $dates[] = sprintf("05/%02d", $i);
     }
 
 ?>
@@ -22,7 +22,7 @@
     var GrossFirstTimeRevenue=<?=json_encode($grossFirst['Amount'])?>;
     
     $(function(){
-        Highcharts.chart('chartContainer', {
+        var chart = Highcharts.chart('chartContainer', {
             title: {
                 text: 'Marketing Reporting'
             },
@@ -67,6 +67,14 @@
             ]
 
         });
+
+        for (var i=0;i<chart.series.length;i++)
+		{
+			var se = chart.series[i];
+			if (se.name != "Gross Revenue") {
+				se.hide();
+			}
+		}
     });
 
 	function addCommas(nStr)
